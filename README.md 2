@@ -1,0 +1,80 @@
+
+# 🧪 Maturitní otázka č. 1  
+## TECO – Praktická konfigurace uživatelského rozhraní pomocí WebMakeru
+
+---
+
+### 🧾 Zadání
+
+**TECO praktická konfigurace uživatelského rozhraní pomocí integrovaného „WebMakeru“ v programu Mosaic, úrovně zabezpečení pro uživatele nebo správce atd.**
+
+---
+
+## ✅ Úkol č. 1
+
+**Cíl:**  
+Po stisknutí tlačítka na webovém rozhraní se rozsvítí halogenová žárovka.  
+Zhasnutí proběhne stiskem druhého tlačítka.  
+Vytvoř i jedno společné tlačítko pro zapnutí/vypnutí.
+
+---
+
+### 👣 Postup konfigurace
+
+1. **Klikni na ikonu knihovny** v horním levém rohu (pod logem Mosaicu).  
+   ![Knihovna](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/VisualEditor_-_icon_-_library.svg/120px-VisualEditor_-_icon_-_library.svg.png)
+
+2. **Nainstaluj knihovnu `iControlLib`**.
+
+3. **Vytvoř tabulku `fb_DimmerLED`**:
+   - Použij `set level` (např. `bcfgs`) s inicializací na hodnotu `100`.
+   - Vpravo v našem PLC najdi `C-OR-0202B` a použij `R8 - p4 - OUT`.
+   - Použij `DO1` a připoj ho na výstup `OUT`.
+
+4. **Založ WebMaker** pomocí ikonky na horní liště.  
+   ![WebMaker](https://www.tecomat.com/wp-content/uploads/2022/05/WebMaker_icon.png)
+
+5. **Přidej tlačítko**:
+   - Klikni na „Přidat tlačítko“.
+   - Pojmenuj ho (např. `Zapnout světlo`).
+   - Nastav mu odpovídající proměnnou (např. `DO1`).
+
+6. **Potvrď kliknutím na „OK“** a ulož změny.
+
+7. **Nahraj projekt do PLC** a spusť.
+
+---
+
+## 💡 Úkol č. 2  
+### Proč je výhodné vytvořit webové rozhraní pro chytrý dům?
+
+---
+
+### ✅ Hlavní výhody:
+
+- **🌍 Snadná dostupnost**  
+  - Ovládání z jakéhokoliv zařízení přes běžný webový prohlížeč.  
+  - Není potřeba instalovat aplikace.
+
+- **📡 Centralizované ovládání**  
+  - Všechna zařízení můžeš ovládat z jednoho místa.
+
+- **🧑‍💻 Uživatelsky přívětivé prostředí**  
+  - Rozhraní můžeš snadno přizpůsobit, rozšiřovat nebo upravovat.
+
+- **🌐 Vzdálený přístup a monitoring**  
+  - Možnost sledovat a řídit domácnost i mimo domov.
+
+- **🔐 Uživatelské úrovně**  
+  - Možnost nastavit rozdílná oprávnění pro uživatele a správce.
+
+---
+
+> Webové rozhraní zajišťuje **moderní, efektivní a pohodlné ovládání** celé chytré domácnosti s možností budoucího rozšiřování a přizpůsobení potřebám uživatele.
+
+---
+
+### 📎 Poznámka:
+
+Obrázky jsou použity z veřejných zdrojů. Pokud máš vlastní screenshoty z Mosaic nebo WebMakeru, nahraj je do složky `/img/` a přepiš odkazy obrázků v tomto souboru.
+
